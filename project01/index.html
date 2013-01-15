@@ -7,41 +7,52 @@
 		<script src="functions.js"></script>
 	</head>
 	<body>
-		<div id="all">
-			<div id="title">
+		<div id="title">
+			<div class="in">
 				<h1>The Magic Life Figure-Outer!</h1>
 				<h6>Figuring out your life for you, so don't have to...</h6>
 			</div>
 			<div id="menubar">
-				<a title="Phone It, ET" onmouseover="colorchange(0)">Home</a>
-				<a title="You Have Those?" onmouseover="colorchange(0)">Intrests</a>
-				<a title="Not That We Care" onmouseover="colorchange(0)">Health</a>
-				<a title="Pay Up" onmouseover="colorchange(0)">Academic</a>
-				<a title="We Aren't" onmouseover="colorchange(0)">Professional</a>
-				<a title="What's That?" onmouseover="colorchange(0)">Fun</a>
-				<a title="MWAH HA HA HA!!!" onmouseover="colorchange(1)">Evil</a>
-			</div>
-			<div id="other">
-				<div id="result">
-					<h3>Current Progress in Life</h3>
-					<p>Mediocre. You really should enjoy life more.</p>
-				</div>
-				<h2>Lorem Ipsum Dolor Sit Amet.</h2>
-				<form>
-					<label for="feelings">How do you feel today?</label>
-					<input type="text" id="feelings"></input><br/>
-					<p>How would you like to feel?</p>
-					<p>(choose all that apply)</p>
-					<textarea rows="3" cols="40">Comfortably numb
+				<a id="a1" title="Phone It, ET" onmouseover="colorchange(0, 'a1')">Home</a>
+				<a id="a2" title="You Have Those?" onmouseover="colorchange(0, 'a2')">Intrests</a>
+				<a id="a3" title="Not That We Care" onmouseover="colorchange(0, 'a3')">Health</a>
+				<a id="a4" title="Pay Up" onmouseover="colorchange(0, 'a4')">Academic</a>
+				<a id="a5" title="We Aren't" onmouseover="colorchange(0, 'a5')">Professional</a>
+				<a id="a6" title="What's That?" onmouseover="colorchange(0, 'a6')">Fun</a>
+				<a id="a7" title="MWAH HA HA HA!!!" onmouseover="colorchange(1, 'a7')">Evil</a>
+				<div id="other">
+					<div class="in">
+						<div id="result">
+							<h3>Current Progress in Life</h3>
+							<p>Mediocre. You really should enjoy life more.</p>
+						</div>
+						<h2>Lorem Ipsum Dolor Sit Amet.</h2>
+						<form onsubmit="check('feelings')">
+							<table>
+								<tr>
+									<td>How do you feel today?</td>
+									<td><input type="text" id="feelings"></input></td>
+								</tr>
+								<tr>
+									<td>How would you like to feel?<br/>
+									(choose all that apply)</td>
+									<td><textarea rows="3" cols="40">Comfortably numb
 Grumpy as poop, you jerk
 Happy like I'm on controlled substances
 Normal. Absolutely Normal.
-					</textarea>
-					<br/><input type="submit" value="Feel Me!"></input>
-				</form>
-			</div>
-			<div>
-				<h6>&copy; 2011 Borg-Like Monstrosity of Mind Control, Inc. All rights reserved.</h6>
+									</textarea></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td><input type="submit" value="Feel Me!"></input></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+					<div id="rights">
+						<h6>&copy; 2011 Borg-Like Monstrosity of Mind Control, Inc. All rights reserved.</h6>
+					</div>
+				</div>
 			</div>
 		</div>
 	</body>
